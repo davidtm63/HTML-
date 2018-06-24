@@ -1,0 +1,47 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <link rel="stylesheet" href="../css/style2.css"></link>
+        
+        <title class="center">Formulario</title>
+    </head>
+    <body class="azulito">
+    <h1 class="center white azulito">Formulario</h1>
+    <div class="center">
+        <p class="white azulito">Sexo: </p>
+        <label for="sexo"></label>
+        <select name="sexo" id="sexo" >
+            <option>Selecciona</option>
+            <option value="Se&ntilde;or">Hombre</option>
+            <option value="Se&ntilde;ora">Mujer</option>
+            <option value="Otro">Otro</option>
+        </select>
+        <br>
+        <br>
+        <p class="white azulito"> Nombre:</p> 
+        <label for="nombre"></label>
+        <div><input type="text" name="nombre" id="nombre" value="Nombre" onfocus="this.value=name=''"></div>
+        <br>
+        <p class="white azulito">Apellidos:</p>
+        <label for="apellidos"></label>
+        <div><input type="text" name="apellidos" id="apellidos" value="Apellidos" onfocus="this.value=name=''"></div>
+        <br>
+        <p class="white azulito">Fecha de nacimiento:</p>
+        <label for="diamesanno"></label>
+        <input class="divinput" type="date" id="diamesanno" name="diamesanno">
+        <br>
+        <br>
+        <p class="white azulito">Correo:</p>
+        <input type="correo" id="correo" name="correo" onfocus="this.value=name=''">
+
+        <script type="text/javascript" src="../css/javascriptform.js"></script>
+       <br>
+       <div class="right">
+         <span id="textosexo"></span> <span id="txtnombre"></span><span id="txtapellido"></span>
+        <span id="fecha"></span>  <span id="mail"></span>
+        </div>
+        <br>
+        <input type="button" id="comprobar" value="Comprobar" onclick="funcion6()">
+    </div>
+
+    </body>

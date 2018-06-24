@@ -1,0 +1,115 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>EXAMEN</title> 
+        <link rel="stylesheet" href="../css/styleEX.css"></link>
+    </head>
+    <body>
+        <div class="div">
+            <img class="img" src="https://upload.wikimedia.org/wikipedia/commons/2/22/Iceweasel_icon.svg">
+            <h1>IceWeasel, navegador totalmente libre basado en Mozilla Firefox</h2>
+        </div>
+        <div class="grey">
+            
+                <form action="/ejemplo.html">
+                
+                  
+        <table>
+            <tr>
+                <td class="casi">
+                        <img class="block" src="https://upload.wikimedia.org/wikipedia/commons/2/22/Iceweasel_icon.svg">
+                </td>
+                
+                <td class="">
+                    <p> Ultimas noricias
+                        Liberada nueva version de Debian Jessie 8.1</p>
+                    <p> Opera Browser añade nuevos elementos de HTML5 y CSS3</p>
+                </td>
+            </tr>
+            <tr>
+                
+
+                    
+                <td class="borde">
+                    
+                    <p class="center">Introduce tus datos</p>
+                    <br>
+                    
+                    Nombre:
+                    
+                    <input type="text" value="nombre" id="nombre" onfocus="this.value=name=''">
+                    <br>
+                    Apellidos:
+                    
+                    <input type="text" value="apellido" id="apellidos" onfocus="this.value=name=''">
+                    <br>
+                    Email:
+                    <input type="email" value="mail" id="mail" onfocus="this.value=name=''">
+                    <br>
+                    &iquest;Que otros navegadores utilizas?
+                    
+                    <select id="sel" multiple>
+                            <option>Chromium</option>
+                            <option>Firefox</option>
+                            <option>Internet Explorer</option>
+                            <option>Opera</option>
+                    </select>
+                    <br>
+                    Danos tu opinion sobre IceWeasel:
+                    
+                    <textarea rows="2" value="contenido" cols="25" id="contenido"></textarea>
+                    <br>
+                    <input type="button"  value="Enviar" onclick="enviar()">
+                    <input type="button" value="Borrar" onclick="borrar()">
+                </td>
+                        
+                    
+            </tr>  
+        </table>
+    </form>
+    <div class="center ">
+            <a target="_blank" href="https://www.google.es">Enlace 1</a>
+            <a target="_blank" href="https://www.google.es">Enlace 2</a> 
+    </div>
+</div>   
+            
+    
+
+<!-- Script para detectar si esta lleno -->
+<script>
+var nom=document.getElementById('nombre');
+var ap=document.getElementById('apellidos');
+var m=document.getElementById('mail');
+var cont=document.getElementById('contenido');
+
+function enviar(){
+if(nom.value==""){
+    nom.className='bordero'
+    nom.value='!NECESARIO!'
+}
+if(ap.value==""){
+    ap.className='bordero'
+    ap.value='!NECESARIO!'
+}
+if(m.value==""){
+    m.className='bordero'
+    m.value='!NECESARIO!'
+}
+if(cont.value==""){
+    cont.className='bordero'
+    cont.value='!NECESARIO!'
+}
+}
+
+function borrar(){
+    nom.className='';
+    ap.className='';
+    m.className='';
+    cont.className='';
+    nom.value='';
+    ap.value='';
+    m.value='';
+    cont.value='';
+}
+</script>
+</body>

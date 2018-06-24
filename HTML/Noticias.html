@@ -1,0 +1,42 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <link rel="stylesheet" href="../css/style2.css"></link>
+        <title>Noticias</title>
+    </head>
+    <body class="azulito">
+        
+        <h1 class="center white azulito">Noticia:</h1>
+        <div>
+            <p class="white azulito"> Nombre:<input type="text" id="nombre" value="nombre" onfocus="this.value=name=''" required></p>
+        </div>
+        <br>
+        <div>
+            <p class="white azulito">Titulo:<input type="text" id="titulo" value="titulo" onfocus="this.value=name=''" required></p>
+        </div>
+        <br>
+        <div>
+            <p class="white azulito">URL:<input type="url" id="myURL"required></p>
+        </div>
+        <br>
+        <p class="center white azulito"> Contenido:</p>
+        <br>
+        <div>
+            <textarea rows="4" cols="50" id="contenido" required></textarea>
+        </div>
+        <br>
+        <div>
+            <input type="button" value="Enviar" onclick="fenviar()">
+            <input type="button" value="Borrar" onclick="borrar()">
+            <input type="button" value="Prime" onclick="fenviar2()">
+        </div>
+        <br>
+        <div>
+           
+            <select id="numero"></select>
+           
+        </div>
+        <script type="text/javascript" src="../css/noticias.js"></script>
+        <ol id="nom" class="center white2 azulito">
+        </ol>
+    </body> 

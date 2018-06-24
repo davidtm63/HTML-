@@ -1,0 +1,30 @@
+<style>
+    table{
+        border-collapse: collapse;
+        border:1px solid black;
+        
+    }
+    table, th{
+        border:1px solid black;
+        
+    }
+    thead{
+        background-color:antiquewhite;
+    }
+    
+    .uno,.seis{
+        background-color:aqua;
+    }
+    .dos,.siete{
+        background-color: blueviolet;
+    }
+    .tres,.ocho{
+        background-color:brown;
+    }
+    .cuatro,.nueve{
+        background-color:chartreuse;
+    }
+    .cinco,.diez{
+        background-color:crimson;
+    }
+</style>

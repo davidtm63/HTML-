@@ -1,0 +1,163 @@
+.center{
+    text-align: center;
+    margin: 0 auto;
+    
+}
+.imagen{
+    background: url("http://3.bp.blogspot.com/-q308s56XHE4/VKHwdeXwPpI/AAAAAAAATqM/WrGVeirhXlc/s1600/margarita-corazon.jpg");
+    width: 100%;
+    height: 100%;
+}
+.right{
+    float: top;
+}
+.rojo{
+    background-color: rgb(255, 62, 62);
+}
+.white{
+    color: white;
+    text-shadow: 2px 2px 1px black;
+    background-color: white;
+}
+.azulito{
+    background-color: rgb(1, 109, 136);
+}
+.todo{
+    width: 65px;
+}
+.grande{
+    width: 100px;
+    height: 100px;
+}
+/* div{
+    text-align: center;
+} */
+.white2{
+    color: white;
+}
+a{
+    color: white;
+    text-decoration: none;
+}
+.borde{
+    border-color: red;
+    color: red;
+    -webkit-animation: blink 1s step-end infinite;
+    animation: blink 1s step-end infinite
+}
+@-webkit-keyframes blink{
+    67% {opacity: 0 }
+}
+@keyframes blink {
+    67% {opacity: 0 }    
+}
+.circulo {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background: white;
+    border-color: 1px black;
+    border-style: solid;
+    margin-left: auto;
+    margin-right: auto;
+    display: inline-block;
+}
+.circulo2 {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: black;
+    border-color: 1px black;
+    border-style: solid;
+    margin-left: auto;
+    margin-right: auto;
+    /* display: inline-block; */
+    -webkit-animation: blink2 1s step-end infinite;
+    animation: blink2 3s step-end infinite;
+    margin-top: 20px;
+    float: left;
+}
+.circulo3 {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: black;
+    border-color: 1px black;
+    border-style: solid;
+    margin-left: auto;
+    margin-right: auto;
+    -webkit-animation: blink2 1s step-end infinite;
+    animation: blink2 3s step-end infinite;
+    margin-top: 20px;
+    float: right;
+}
+@-webkit-keyframes blink2 { 
+    0% { -webkit-transform: scaleX(1) scaleY(1); } 
+    1% { -webkit-transform: scaleX(1.3) scaleY(0.1); } 
+    2% { -webkit-transform: scaleX(1) scaleY(1); } 
+    60% { -webkit-transform: scaleX(1) scaleY(1); } 
+    61% { -webkit-transform: scaleX(1.3) scaleY(0.1);} 
+    62% { -webkit-transform: scaleX(1) scaleY(1); } 
+    100% { -webkit-transform: scaleX(1) scaleY(1); }
+}
+  
+
+@keyframes blink2 { 
+    0% { transform: scaleX(1) scaleY(1); } 
+    1% { transform: scaleX(1.3) scaleY(0.1); } 
+    2% { transform: scaleX(1) scaleY(1); } 
+    60% { transform: scaleX(1) scaleY(1); } 
+    61% { transform: scaleX(1.3) scaleY(0.1);} 
+    62% { transform: scaleX(1) scaleY(1); } 
+    100% { transform: scaleX(1) scaleY(1); }
+}
+canvas{
+    height: 100px;
+    width: 100px;
+    border: 1px solid black;
+}
+td{
+    border: 1px solid black;
+    height: 45px;
+    width: 30px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+table{
+    display: inline-block;
+    border-collapse: collapse;
+    border: 1px solid black;
+}
+canvas{
+    border-radius: 50%;
+    width: 600px;
+    height: 600px;
+}
+.cabeza{
+    width: 250px;
+    height: 400px;
+    background-color: grey;
+    /* border-top-right-radius: 60%;
+    border-top-left-radius: 40%; */
+    -webkit-animation: move 3s infinite;
+    /* margin-top: 100px; */
+}
+.grey{
+    color: grey;
+}
+
+@-webkit-keyframes move{
+    0% {border-top-left-radius: 60%;}
+    100% {border-top-left-radius: 30%;}
+    0% {border-top-right-radius: 30%;}
+    100% {border-top-right-radius: 60%;}
+
+    0% {border-top-left-radius: 30%;}
+    100% {border-top-left-radius: 60%;}
+    0% {border-top-right-radius: 60%;}
+    100% {border-top-right-radius: 30%;}
+    
+}
+
+

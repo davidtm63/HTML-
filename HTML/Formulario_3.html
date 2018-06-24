@@ -1,0 +1,45 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>Formulario 3</title>
+        <link rel="stylesheet" href="../css/style2.css">
+    </head>
+    <body class="imagen">
+        <h1 class="center">Formulario 3</h1>
+        <form action="http://127.0.0.1/login_usuario" method="post">
+            <div  class="center">
+                Nombre de usuario: 
+                    <label for="usuario"></label>
+                     <div><input class="center" type="text" name="usuario" id="usuario" value="Usuario" onfocus="this.value=name=''" ></div>
+                    <br>
+                 Nombre: 
+                    <label for="nombre"></label>
+                    <div><input class="center"  type="text" name="nombre" id="Nombre" value="nombre" onfocus="this.value=name=''"></div><br>
+                Apellidos:
+                    <label for="apellidos"></label>
+                    <div><input class="center" type="text" name="apellidos" id="apellidos" value="Apellidos" onfocus="this.value=name=''"></div>
+                <br>
+                Contrasena: 
+                    <label for="password"></label>
+                    <div><input class="center" type="password" name="password" id="password" onfocus="this.value=name=''"></div><br>
+                Sexo: 
+                    <label for="sexo"></label>
+                    <select class="center" name="sexo" id="sexo">
+                        <option>Selecciona</option>
+                        <option value="m">Hombre</option>
+                        <option value="f">Mujer</option>
+                        option value="o">Otro</option>
+                    </select>
+                    <br>
+                    <br>
+                    <input type="submit"  value="Enviar">
+                    <input type="reset" value="Cargar">
+                    <br>
+                    <br>
+                    <div onclick="alert('ALAIN GILIPOLLAS :)')";>
+                        <input type="button" value="Pinchame"/>
+                    </div>
+            </div>
+        </form>
+    </body>
+</html>

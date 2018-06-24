@@ -1,0 +1,56 @@
+<!DOCTYPE>
+<html>
+<head>
+    <style>
+        .divcenter{
+            text-align: center
+        }
+        .divinput{
+            background-color: #a9a9a9
+        }
+    </style>
+    <title>Usuario</title>
+</head>
+<body>
+    <h1 class="divcenter">USUARIO</h1>
+    <form action="http://127.0.0.1/login_usuario" method="post">
+    
+    <div  class="divcenter">
+        Nombre de usuario: 
+            <label for="usuario"></label>
+             <div><input class="divinput" type="text" name="usuario" id="usuario" value="Usuario" onfocus="this.value=name=''" ></div>
+            <br>
+         Nombre: 
+            <label for="nombre"></label>
+            <div><input class="divinput"  type="text" name="nombre" id="Nombre" value="nombre" onfocus="this.value=name=''"></div><br>
+        Apellidos:
+            <label for="apellidos"></label>
+            <div><input class="divinput" type="text" name="apellidos" id="apellidos" value="Apellidos" onfocus="this.value=name=''"></div>
+        <br>
+        Contrasena: 
+            <label for="password"></label>
+            <div><input class="divinput" type="password" name="password" id="password" onfocus="this.value=name=''"></div><br>
+        Sexo: 
+            <label for="sexo"></label>
+            <select class="divinput" name="sexo" id="sexo">
+                <option>Selecciona</option>
+                <option value="m">Hombre</option>
+                <option value="f">Mujer</option>
+                option value="o">Otro</option>
+            </select>
+    <br>
+    <br>
+        Fecha de nacimiento:
+            <label for="diamesanno"></label>
+            <input class="divinput" type="date" id="diamesanno" name="diamesanno">
+    <br>
+    <br>
+        Color favorito:
+            <label for="color"></label>
+            <input  class="divinput" type="color" name="color" id="color">
+    <br>
+        <input type="submit"  value="Enviar">
+</div>
+</form>
+</body>
+</html>

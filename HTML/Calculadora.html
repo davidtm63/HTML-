@@ -1,0 +1,78 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <link rel="stylesheet" href="../css/style2.css"></link>
+        <title>Calculadora</title>
+    </head>
+    <body class="azulito">
+        <h1 class="center white azulito">CALCULADORA</h1>
+        <script type="text/javascript" src="../css/calculadorascript.js"></script>
+            <table class="center white" border="6">
+                <tr>
+                    <td colspan="4">
+                        <input type="text" id="valor_numero" maxlength="20">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="button" value="1" id="num1" onclick="Dar(1)">
+                    </td>
+                    <td>
+                        <input type="button" value="2" id="num2" onclick="Dar(2)">
+                    </td>
+                    <td>
+                        <input type="button" value="3" id="num3"onclick="Dar(3)">
+                    </td>
+                    <td>
+                        <input type="button" value="+" id="suma" onclick="opera(1)">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="button" value="4" id="num4" onclick="Dar(4)">
+                    </td>
+                    <td>
+                        <input type="button" value="5" id="num5"onclick="Dar(5)">
+                    </td>
+                    <td>
+                        <input type="button" value="6" id="num6"onclick="Dar(6)">
+                    </td>
+                    <td>
+                        <input type="button" value="-" id="resta" onclick="opera(2)">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="button" value="7" id="num7"onclick="Dar(7)">
+                    </td>
+                    <td>
+                        <input type="button" value="8" id="num8"onclick="Dar(8)">
+                    </td>
+                    <td>
+                        <input type="button" value="9" id="num9"onclick="Dar(9)">
+                    </td>
+                    <td>
+                        <input type="button" value="*" id="multi" onclick="opera(3)">
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <input class="todo" type="button" value="=" id="igual" onclick="calcular()">
+                    </td>
+                    <td>
+                        <input type="button" value="0" id="num0"onclick="Dar('0')">
+                    </td>
+                    <td>
+                        <input type="button" value="/" id="dividir" onclick="opera(4)">
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <input class="todo" type="button" value="Reset" onclick="reset()">
+                    </td>
+                    <td colspan="2">
+                        <input class="todo" type="button" value="C-1" >
+                    </td>
+                </tr>
+            </table>
+    </body>
